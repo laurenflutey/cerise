@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet'
+          type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Cerise Beauty</title>
+
+    <!-- Bootstrap -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+        @font-face {
+            font-family: "cerise";
+            src: url(assets/fonts/cerise.otf) format("opentype");
+        }
+
+        @font-face {
+            font-family: "beauty";
+            src: url(assets/fonts/beauty.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: "libby";
+            src: url(assets/fonts/LibbyBold.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: "lane";
+            src: url(assets/fonts/lane.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: "quick";
+            src: url(assets/fonts/quick.otf);
+        }
+
+        .contentContainer {
+            min-height: calc(100vh - 50px);
+        }
+
+        #welcome {
+            background-image: url(assets/images/mainbackground1200.jpg);
+            background-size: cover;
+            background-position: center;
+            margin-top: 30px;
+        }
+
+        #about {
+            background-color: #D33257;
+            min-height: 60%;
+        }
+
+        #logo {
+            font-family: cerise, sans-serif;
+            font-size: 6em;
+            margin-top: -15px;
+            color: #D33257;
+        }
+
+        #services {
+            background-color: #FDE3A7;
+            padding: 0;
+        }
+
+        #photoCarousel {
+	    width: 100%;
+            padding-top: 5%;
+        }
+
+	.fullWidth {
+	    width: 100%;
+	}
+
+        #cerise {
+            font-family: cerise, sans-serif;
+            font-size: 20em;
+            text-align: center;
+            color: #D33257;
+        }
+
+        #abouttitle {
+            font-family: cerise, sans-serif;
+            font-size: 17em;
+            text-align: center;
+            margin-top: -100px;
+        }
+
+        #relaxing {
+            text-align: center;
+            font-family: libby, sans-serif;
+            font-size: .8em;
+        }
+
+        #experienced {
+            text-align: center;
+            font-family: libby, sans-serif;
+            font-size: .8em;
+        }
+
+        .info {
+            font-family: quick, sans-serif;
+            font-size: 2em;
+        }
+
+        #beautyTherapy {
+            font-family: beauty, sans-serif;
+            text-align: center;
+            font-size: 3em;
+            color: #fbe2a6;
+        }
+
+        #treatments {
+            text-align: center;
+            font-family: libby, sans-serif;
+            font-size: .8em;
+            margin-bottom: 20%;
+        }
+
+        #servicetitle {
+            font-family: cerise, sans-serif;
+            font-size: 20em;
+            text-align: center;
+            color: #D33257;
+            margin-top: -130px;
+        }
+
+        .buttonStyle {
+            background-color: #D33257;
+            border: none;
+            border-radius: 10px;
+            color: #fbe2a6;
+            margin-top: 10px;
+            height: 60px;
+            font-family: quick;
+            font-size: 1.5em;
+        }
+
+        .dropdown-menu {
+            font-family: quick, serif;
+            width: 100%;
+            text-align: center;
+        }
+
+        .buttonCenter {
+            text-align: center;
+            width: 100%;
+        }
+
+        .badge {
+            float: right;
+            margin-right: 5px;
+        }
+
+        #clearnavbar {
+            background-color: black;
+            font-family: quick;
+        }
+
+        #location {
+            background: url("assets/images/outside.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        #contact {
+            background-color: #fbe2a6;
+            color: #d23257;
+            text-align: center;
+        }
+
+        #lauren {
+            background-color: #fbe2a6;
+        }
+
+        .infotitles {
+            font-size: 2em;
+        }
+
+        .contacttitle {
+            font-family: cerise, sans-serif;
+            font-size: 18em;
+            text-align: center;
+            padding-bottom: 0;
+            margin-top: -5%;
+        }
+
+        #telephone {
+            margin-top: -5%;
+        }
+
+        #phonenumber {
+            font-family: libby, sans-serif;
+        }
+
+        #locationtitle {
+            font-family: cerise, sans-serif;
+            color: #fbe2a6;
+            font-size: 18em;
+            text-align: center;
+            margin-top: -5%;
+        }
+
+        #locationinfo {
+            background-color: #d23257;
+            text-align: center;
+        }
+
+        #address {
+            font-family: quick, sans-serif;
+            color: #fbe2a6;
+            text-align: center;
+            font-size: 1.7em;
+        }
+
+        #map {
+            width: 50%;
+            margin-bottom:10%;
+        }
+
+        #chonel {
+            font-family: quick, sans-serif;
+            font-size:  2em;
+            color: #333;
+            padding-bottom: 3%;
+            padding-top: 2%;
+        }
+        
+        #chonellink {
+            color: #fbe2a6;
+        }
+
+        #email {
+            font-family: quick, sans-serif;
+            font-size: 3em;
+        }
+
+	#footer-div {
+	    height: 5%;
+	    width: 100%;
+	}
+
+	#footer-content {
+	    text-align: center;
+   	    font-size: 1.6em;
+	    font-family: quick, sans-serif;
+	}
+
+        #parking {
+            font-family: quick, sans-serif;
+            color: #black;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 2%;
+        }
+    </style>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" id="logo" class="navbar-brand">Cerise</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-collapse">
+
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#abouttitle">About</a> </li>
+                <li><a href="#servicetitle">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#locationtitle">Location</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="welcome" class="container-fluid contentContainer">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h1 id="cerise">Cerise</h1>
+            <h2 id="beautyTherapy"><strong>Beauty Therapy</strong></h2>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid contentContainer" id="about">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h1 id="abouttitle">About</h1>
+        </div>
+    </div>
+
+    <div class="row marginBottom">
+        <div class="col-md-4">
+            <div id="relaxing">
+                <span class="glyphicon glyphicon-leaf marginRight" style="font-size: 70px"></span>
+                <h2 class="infotitles">Relaxing</h2>
+                <p class="info"><strong> Cerise Beauty Therapy offers you quality services in a relaxing
+                    environment.<br/>
+                    You can escape and unwind from daily life with a caring touch.</strong></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div id="treatments">
+                <span class="glyphicon glyphicon-list-alt marginRight" style="font-size: 70px"></span>
+                <h2 class="infotitles">Range of Treatments</h2>
+                <p class="info"><strong>Cerise offers a wide range of skin treatments, waxing options, massage
+                    treatments,
+                    beauty treatments including makeup and tinting as well as pedicures and manicures.</strong></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div id="experienced">
+                <span class="glyphicon glyphicon-ok marginRight" style="font-size: 70px"></span>
+                <h2 class="infotitles">Experienced</h2>
+                <p class="info"><strong>Cerise hosts a clean, private environment. You can feel safe in the hands of
+                    experienced beautician Kristina Verschoor, with any treatment you select.</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services" class="container-fluid contentContainer">
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+            <h1 id="servicetitle"> Services </h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6 col-sm-4">
+            <div class="btn-group buttonCenter" role="group">
+                <div class="dropdown">
+                    <button id="skinBtn" class="btn dropdown-toggle buttonStyle" type="button"
+                            data-toggle="dropdown"
+                            style="display: block; width: 100%;"
+                            aria-haspopup="true" aria-expanded="true">
+                        Skin Treatments
+                        <span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="skinBtn">
+                        <li>Mini Facial<span class="badge">$45</span></li>
+                        <li>Deluxe Facial<span class="badge">$60</span></li>
+                        <li>Millia Extraction<span class="badge">$20</span></li>
+                        <li>Cold Sore Treatment<span class="badge">$20</span></li>
+                        <li>Makeup<span class="badge">$40</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <div class="btn-group buttonCenter" role="group">
+                <div class="dropdown">
+                    <button id="nailbtn" class="btn dropdown-toggle buttonStyle" type="button"
+                            data-toggle="dropdown"
+                            style="display: block; width: 100%;"
+                            aria-haspopup="true" aria-expanded="true">
+                        Nail Treatments
+                        <span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="nailbtn">
+                        <li>Express Manicure<span class="badge">$35</span></li>
+                        <li>Deluxe Manicure<span class="badge">$50</span></li>
+                        <li>Express Pedicure<span class="badge">$35</span></li>
+                        <li>Deluxe Pedicure<span class="badge">$50</span></li>
+                        <li>French Paint<span class="badge">$60</span></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <div class="btn-group buttonCenter" role="group">
+
+                <div class="dropdown">
+                    <button id="gelbtn" class="btn dropdown-toggle buttonStyle" type="button"
+                            data-toggle="dropdown"
+                            style="display: block; width: 100%;"
+                            aria-haspopup="true" aria-expanded="true">
+                        Gel Colour System
+                        <span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="gelbtn">
+                        <li>Gel Polish<span class="badge">$50</span></li>
+                        <li>French Gels<span class="badge">$55</span></li>
+                        <li>Gel Polish Soak Off<span class="badge">$25</span></li>
+                        <li>Nail Repair<span class="badge">$20</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4">
+            <div class="btn-group buttonCenter" role="group">
+                <div class="dropdown">
+                    <button id="waxbtn" class="btn dropdown-toggle buttonStyle" type="button"
+                            data-toggle="dropdown"
+                            style="display: block; width: 100%;"
+                            aria-haspopup="true" aria-expanded="true">
+                        Waxing Treatments
+
+                        <span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="waxbtn">
+                        <li>Upper Lip Wax<span class="badge">$20</span></li>
+                        <li>Chin Wax<span class="badge">$20</span></li>
+                        <li>Half Leg Wax<span class="badge">$30</span></li>
+                        <li>3/4 Leg Wax<span class="badge">$35</span></li>
+                        <li>Full Leg Wax<span class="badge">$45</span></li>
+                        <li>Bikini Line Wax<span class="badge">$25</span></li>
+                        <li>Brazillian 1st Wax<span class="badge">$60</span></li>
+                        <li>Brazillian Follow-Up Wax<span class="badge">$45</span></li>
+                        <li>Under-Arm Wax<span class="badge">$25</span></li>
+                        <li>Chest Wax<span class="badge">$40</span></li>
+                        <li>Back Wax<span class="badge">$40</span></li>
+                        <li>Hair Bleach<span class="badge">$30</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4">
+            <div class="btn-group buttonCenter" role="group">
+                <div class="dropdown">
+                    <button id="tintbtn" class="btn  dropdown-toggle buttonStyle" type="button"
+                            data-toggle="dropdown"
+                            style="display: block; width: 100%;"
+                            aria-haspopup="true" aria-expanded="true">
+                        Tinting Treatments
+                        <span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="tintbtn">
+                        <li>Eyelash Tint<span class="badge">$18</span></li>
+                        <li>Eyebrow Tint<span class="badge">$14</span></li>
+                        <li>Eyebrow Shape<span class="badge">$15</span></li>
+                        <li>Eyelash, Eyebrow Tint/Shape<span class="badge">$35</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-6 col-sm-4">
+            <div class="btn-group buttonCenter" role="group">
+                <div class="dropdown">
+                    <button id="massagebtn" class="btn dropdown-toggle buttonStyle" type="button"
+                            data-toggle="dropdown"
+                            style="display: block; width: 100%;"
+                            aria-haspopup="true" aria-expanded="true">
+                        Massage Treatments
+                        <span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="massagebtn">
+                        <li>Half Back/Shoulder Massage<span class="badge">$45</span></li>
+                        <li>Full Body Massage<span class="badge">$60</span></li>
+                        <li>Hand Massage<span class="badge">$20</span></li>
+                        <li>Foot Massage<span class="badge">$20</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="photoCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#photoCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#photoCarousel" data-slide-to="1"></li>
+            <li data-target="#photoCarousel" data-slide-to="2"></li>
+            <li data-target="#photoCarousel" data-slide-to="3"></li>
+            <li data-target="#photoCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="assets/images/carousel1.jpg" alt="Shelves" class="fullWidth">
+            </div>
+
+            <div class="item">
+                <img src="assets/images/carousel2.jpg" alt="Massage Bed" class="fullWidth">
+            </div>
+
+            <div class="item">
+                <img src="assets/images/carousel3.jpg" alt="Flower Display" class="fullWidth">
+            </div>
+
+            <div class="item">
+                <img src="assets/images/carousel4.jpg" alt="Nail Table" class="fullWidth">
+            </div>
+
+            <div class="item">
+                <img src="assets/images/carousel5.jpg" alt="Marilyn Mirrors" class="fullWidth">
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#photoCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="right carousel-control" href="#photoCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+
+<div id="contact" class="container-fluid contentContainer">
+    <h1 class="contacttitle">Contact</h1>
+    <img id="telephone" src="assets/logos/telephonelargepink.png">
+    <h2 id="phonenumber">06 345 3829</h2>
+    <a href="http://www.facebook.com/cerisebeautywanganui.co.nz"><img id="fblogo"
+                                                                      src="assets/logos/fbiconpink.png"/></a>
+    <h2 id="email"><strong>cerisebeautytherapy@gmail.com</strong></h2>
+
+</div>
+
+<div class="container-fluid contentContainer" id="locationinfo">
+    <h1 id="locationtitle">Location</h1>
+    <p id="chonel">Cerise Beauty operates in a shared space with <a id="chonellink" href="http://www.chonel.co.nz/"> Chonel Hairdressing</a> in the <br> Old Fire Station complex, corner of Guyton Street and Wilson Street Wanganui.</br>  </p>
+    <p id="parking">Free, off street parking is available for clients in the courtyard of the Old Fire Station Building complex.</p>
+    <p id="address">
+        139 Guyton Street
+        <br/>
+        Old Fire Station Building
+        <br/>
+        Wanganui
+        <br/>
+        4500</p>
+    <div>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.3257004287852!2d175.0454266158787!3d-39.93410376607552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d4003bef1ddc225%3A0x508176775da4e755!2sCerise+Beauty+Therapy!5e0!3m2!1sen!2snz!4v1449392578457"
+                width="600" height="450" frameborder="0" scrolling="no" style="border:0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div id="location" class="container-fluid contentContainer">
+</div>
+
+<div id="footer-div" class="container-fluid">
+    <span id="footer-content"><p>All Rights Reserved. </p>
+     <p>Developed by: <a href="http://laurendev.com">Laurendev</a></p></span>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
